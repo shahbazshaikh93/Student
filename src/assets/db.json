@@ -1,0 +1,28 @@
+{
+  "student": [
+    {
+      "id": 101,
+      "name": "Shahbaz",
+      "course": "B.Com",
+      "email": "shahbaz4793@gmail.com",
+      "phoneNo": 9601639389,
+      "address": "Vaghrech, Bilimora"
+    },
+    {
+      "id": 102,
+      "name": "Shahu",
+      "course": "BCA",
+      "email": "shahushaikh93@gmail.com",
+      "phoneNo": 8380836334,
+      "address": "Kothrud Pune"
+    },
+    {
+      "name": "Zaid ",
+      "course": "MBA",
+      "email": "zaid.shaikh@gmail.com",
+      "phoneNo": "9099786055",
+      "address": "Taiwad. Vaghrech",
+      "id": 103
+    }
+  ]
+}

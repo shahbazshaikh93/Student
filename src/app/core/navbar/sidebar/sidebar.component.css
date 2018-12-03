@@ -1,0 +1,32 @@
+.sidebar {
+    position: absolute;
+    display: block;
+    width: 184px;
+    height: 100%;
+    float: left;
+    background-color: #333;
+ }
+  
+.sidemenu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.sidemenu a {
+    display: block;
+    background-color: #333;
+    text-decoration: none;
+    padding: 10px;
+    color: #ccc;
+}
+  
+.sidemenu a:hover {
+      background-color: #563d7c;
+      color: #ccc;
+ }
+
+ .sidemenu a.active {
+    background-color: #563d7c;
+    color: #ccc;
+}

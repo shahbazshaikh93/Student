@@ -1,0 +1,76 @@
+<div class="container" style="margin-top: 100px; margin-left: 240px">
+  
+  <div style="width: 80%;">
+    <h1 class="h4 mb-4">Add Student Form</h1>
+
+<form [formGroup]="studentForm" (ngSubmit) = "onSubmit()" novalidate>
+
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" formControlName="name" placeholder="Student Name">
+  
+      <span class="help-block" *ngIf="(studentForm.get('name').touched || studentForm.get('name').dirty ) && studentForm.get('name').errors " >
+          <span *ngIf="studentForm.get('name').errors.required" >
+           Student Name cannot be Empty.
+          </span>
+          <span *ngIf="studentForm.get('name').errors.minlength" >
+            Please Enter atleast 5 characters
+          </span>
+      </span>
+  
+    </div>
+  
+    <div class="form-group">
+      <label for="course">Course</label>
+      <input type="text" class="form-control" id="course" formControlName="course" placeholder="Course Name">
+  
+      <span class="help-block" *ngIf="(studentForm.get('course').touched || studentForm.get('course').dirty ) && studentForm.get('course').errors" >
+          <span *ngIf="studentForm.get('course').errors.required" >
+            Student Course cannot be Empty.
+          </span>
+      </span>
+  
+    </div>
+
+  
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" id="email" formControlName="email" placeholder="Student Email Address">
+  
+        <span class="help-block" *ngIf="(studentForm.get('email').touched || studentForm.get('email').dirty) && studentForm.get('email').errors" >
+            <span *ngIf="studentForm.get('email').errors.required">
+              Student Email ID cannot be Empty.
+            </span>
+        </span>
+    </div>
+  
+    <div class="form-group">
+        <label for="phoneNo">Phone Number</label>
+        <input type="text" class="form-control" id="phoneNo" formControlName="phoneNo" placeholder="Student Phone Number">
+  
+        <span class="help-block" *ngIf="(studentForm.get('phoneNo').touched || studentForm.get('phoneNo').dirty) && studentForm.get('phoneNo').errors" >
+            <span *ngIf="studentForm.get('phoneNo').errors.required">
+              Student Phone Number cannot be Empty.
+            </span>
+        </span>
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address</label>
+      <input type="text" class="form-control" id="address" formControlName="address" placeholder="Student Address">
+
+      <span class="help-block" *ngIf="(studentForm.get('address').touched || studentForm.get('address').dirty) && studentForm.get('address').errors" >
+          <span *ngIf="studentForm.get('address').errors.required">
+            Student Address cannot be Empty.
+          </span>
+      </span>
+  </div>
+  
+  <div class="form-group">
+    <button type="submit" class="btn btn-success" [disabled]="studentForm.invalid">Submit</button>
+  </div>
+  </form>
+
+</div>
+
+</div>
